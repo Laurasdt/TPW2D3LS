@@ -18,7 +18,7 @@ export const router = createBrowserRouter([
         element: <SearchPage />,
       },
       {
-        path: "details/:packageName",
+        path: "details",
         element: <DetailsPage />,
       },
     ],

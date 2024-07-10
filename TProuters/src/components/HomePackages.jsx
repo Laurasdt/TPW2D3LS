@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./homepackage.css";
+import Btn from "./Btn";
 
 function HomePackages() {
   const [javascriptPackage, setJavascriptPackage] = useState(null);
@@ -29,6 +31,7 @@ function HomePackages() {
           <>
             <h2>{reactPackage.name}</h2>
             <p>{reactPackage.description}</p>
+            <Btn />
           </>
         )}
       </div>{" "}
@@ -37,6 +40,7 @@ function HomePackages() {
           <>
             <h2>{javascriptPackage.name}</h2>
             <p>{javascriptPackage.description}</p>
+            <Btn />
           </>
         )}
       </div>
