@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import HomePackages from "../components/HomePackages";
 import "./homepage.css";
 
 function HomePage() {
@@ -25,14 +26,15 @@ function HomePage() {
           packages, manage dependencies, and more.
         </p>
       </div>
-      <div className="package-list">
+      <HomePackages />
+      {/* <div className="package-list">
         {packages.map((pkg) => (
           <div key={pkg.package.name} className="package-item">
             <h2>{pkg.package.name}</h2>
             <p>{pkg.package.description}</p>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

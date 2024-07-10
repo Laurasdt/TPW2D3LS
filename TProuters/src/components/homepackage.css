@@ -1,0 +1,13 @@
+.home-packages {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.container-package {
+  flex: 1;
+  margin: 0 40px;
+  padding: 40px;
+  background-color: #cfcdcd;
+  text-align: center;
+}
