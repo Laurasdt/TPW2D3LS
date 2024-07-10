@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import SearchPage from "../pages/SearchPage";
 import HomePage from "../pages/HomePage";
+import DetailsPage from "../pages/DetailsPage";
 import Layout from "../routing/Layout";
 
 export const router = createBrowserRouter([
@@ -14,20 +15,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "searchpage",
-        children: [
-          {
-            index: true,
-            element: <SearchPage />,
-          },
-          //   {
-          //     path: ":id",
-          //     element: <UserDetails />,
-          //   },
-          //   {
-          //     path: "new", // /user/new
-          //     element: <UserAddPage />,
-          //   },
-        ],
+        element: <SearchPage />,
+      },
+      {
+        path: "details/:packageName",
+        element: <DetailsPage />,
       },
     ],
   },
