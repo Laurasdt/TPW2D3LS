@@ -1,0 +1,10 @@
+.package-list {
+  margin: 40px;
+}
+
+.package-item {
+  background-color: #e1dddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
